@@ -1,0 +1,12 @@
+item31.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+			if(item31.getLabel().equals("      自动换行")){
+				item31.setLabel(" √自动换行" );
+				text.setLineWrap(true);
+			}
+			else {
+				item31.setLabel("      自动换行" );
+				text.setLineWrap(false);
+			}
+		}
+		});
