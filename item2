@@ -1,0 +1,3 @@
+JfileChooser jfc1=new JfileChooser(”D:/”)
+FileReader fr = new FileReader(f1); 
+BufferedReader br = new BufferedReader(fr);
