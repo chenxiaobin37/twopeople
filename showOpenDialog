@@ -1,0 +1,5 @@
+while((str = br.readLine())!=null){ 
+								text.setText(str); 
+							} 
+							fr.close(); 
+							br.close();
