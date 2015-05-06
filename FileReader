@@ -1,0 +1,3 @@
+JfileChooser jfc1=new JfileChooser()
+FileWriter fw = new FileWriter(f2); 
+BufferedWriter bw = new BufferedWriter(fw);
