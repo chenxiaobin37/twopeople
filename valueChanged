@@ -1,0 +1,29 @@
+  JScrollPane scroll=new JScrollPane(zitiList);
+	   scroll.setBounds(10, 60,100 ,100);
+	   设置图中所示的滚动条
+public void valueChanged(ListSelectionEvent event)
+	    {
+	    myzixing.setText(myxingzhuang[zixingList.getSelectedIndex()]);
+	    ziti_check=myziti.getText();
+	             style_check=myzixing.getText();
+	             daxiao_check=mydaxiao.getText();
+	             int zitidaxiao=Integer.parseInt(daxiao_check);
+	             int zitistyle=Font.PLAIN;
+	             if(style_check.equals("常规"))
+	              zitistyle=Font.PLAIN;
+	             if(style_check.equals("斜体"))
+	              zitistyle=Font.ITALIC;
+	             if(style_check.equals("粗体"))
+	              zitistyle=Font.BOLD;
+	             if(style_check.equals("粗斜体"))
+	              zitistyle=Font.BOLD+Font.ITALIC;
+	             shili.setFont(new Font(ziti_check,zitistyle,zitidaxiao));
+	     
+	    }
+	   });
+	   ancel.addActionListener(new ActionListener(){
+	             public void actionPerformed(ActionEvent e) {
+	              dispose();
+	             }});
+	   ok.addActionListener(new ActionListener(){
+	             public void actionPerformed(ActionEvent e) 
