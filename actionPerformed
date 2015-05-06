@@ -1,0 +1,14 @@
+tem27.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				if(e.getSource()==item27){ 
+					Calendar c1 =Calendar.getInstance(); 
+					int y = c1.get(Calendar.YEAR); 
+					int m = c1.get(Calendar.MONTH); 
+					int d = c1.get(Calendar.DATE); 
+					int h = c1.get(Calendar.HOUR); 
+					int m1 = c1.get(Calendar.MINUTE); 
+					int m2 = m+1; 
+					text.setText(y+"年"+m2+"月"+d+"日"+h+":"+m1); 
+				} 
+			} 
+		});
